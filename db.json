@@ -1,0 +1,34 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Learn React js",
+      "author": 1,
+      "content": "You can learn React...."
+    },
+    {
+      "id": 2,
+      "title": "Learn js",
+      "author": 2,
+      "content": "You can learn JS...."
+    }
+  ],
+  "comments": [{ "id": 1, "body": "some comment", "postId": 1 }],
+  "users": [
+    {
+      "id": 1,
+      "name": "Yusuf",
+      "lastname": "Ay"
+    },
+    {
+      "id": 2,
+      "name": "Erdem",
+      "lastname": "Ay"
+    },
+    {
+      "id": 3,
+      "name": "Idris",
+      "lastname": "Ay"
+    }
+  ]
+}

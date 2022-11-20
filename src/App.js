@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from "react";
+import AddBlog from "./components/AddBlog";
+import BlogCard from "./components/BlogCard";
 
 function App() {
+  const [blogs, setBlogs] = useState([]);
+
+  useEffect(() => {
+    getBlogs();
+  }, []);
+
+  const getBlogs = () => {
+    fetch("http://localhost:3000/blogs")
+      .then((res) => res.json())
+      .then((response) => {
+        console.log(response);
+        setBlogs(response);
+      });
+  };
+
+  const postBlog = () => {
+    
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      <AddBlog/>
+      <div className="flex justify-center m-2 gap-2">
+        {blogs.map((item) => (
+          <BlogCard blog={item} key={item.id} />
+        ))}
+      </div>
     </div>
   );
 }
