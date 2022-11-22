@@ -1,34 +1,35 @@
 {
   "blogs": [
     {
-      "id": 1,
-      "title": "Learn React js",
-      "author": 1,
-      "content": "You can learn React...."
+      "author_lastname": "asdsdf",
+      "author_name": "asd",
+      "content": "asd",
+      "title": "asd",
+      "image_url": "https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg",
+      "id": 1
     },
     {
-      "id": 2,
-      "title": "Learn js",
-      "author": 2,
-      "content": "You can learn JS...."
+      "author_lastname": "vbnvnb",
+      "author_name": "vbnbnvn",
+      "content": "cvbcvb",
+      "title": "xcxcv",
+      "image_url": "https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014__340.jpg",
+      "id": 2
+    },
+    {
+      "author_lastname": "ygj",
+      "author_name": "fgj",
+      "content": "dfgd",
+      "title": "asd",
+      "image_url": "https://images.unsplash.com/photo-1546587348-d12660c30c50?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bmF0dXJhbHxlbnwwfHwwfHw%3D&w=1000&q=80",
+      "id": 3
     }
   ],
-  "comments": [{ "id": 1, "body": "some comment", "postId": 1 }],
-  "users": [
+  "comments": [
     {
       "id": 1,
-      "name": "Yusuf",
-      "lastname": "Ay"
-    },
-    {
-      "id": 2,
-      "name": "Erdem",
-      "lastname": "Ay"
-    },
-    {
-      "id": 3,
-      "name": "Idris",
-      "lastname": "Ay"
+      "body": "some comment",
+      "postId": 1
     }
   ]
 }
