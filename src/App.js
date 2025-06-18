@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import AddBlog from "./components/AddBlog";
 import BlogCard from "./components/BlogCard";
 import Drawer from "./components/Drawer";
+import Calculator from "./components/Calculator";
 import { checkBlogContent } from "./helpers/functions";
 
 function App() {
@@ -54,6 +55,7 @@ function App() {
 
   return (
     <div className="">
+      <Calculator />
       <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
         <AddBlog handleSubmit={handleSubmit} />
       </Drawer>
